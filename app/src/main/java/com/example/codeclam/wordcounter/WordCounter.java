@@ -23,12 +23,12 @@ public class WordCounter extends AppCompatActivity {
         totalWords = findViewById(R.id.answer);
         sentenceToCount = findViewById(R.id.set_sentence);
         count_Button = findViewById(R.id.count_button);
-        count_Button.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                onCountButtonClicked(view);
-            }
-        });
+//        count_Button.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View view) {
+//                onCountButtonClicked(view);
+//            }
+//        });
     }
 
     public void onCountButtonClicked(View count_Button){
