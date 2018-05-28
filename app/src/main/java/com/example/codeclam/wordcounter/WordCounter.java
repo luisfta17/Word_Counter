@@ -8,6 +8,8 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
 
+import java.util.Map;
+
 public class WordCounter extends AppCompatActivity {
 
     TextView totalWords;
@@ -36,7 +38,16 @@ public class WordCounter extends AppCompatActivity {
         String question = sentenceToCount.getText().toString();
         Log.d(getClass().toString(), "The sentence asked was: " + question);
         Counter counter = new Counter();
-        String answer = counter.returnCount(question);
+        String answer = counter.returnMap(question);
         totalWords.setText(answer);
     }
+
+//    public void onCountButtonClicked(View count_Button){
+//        Log.d(getClass().toString(), "onCountButtonClicked called");
+//        String question = sentenceToCount.getText().toString();
+//        Log.d(getClass().toString(), "The sentence asked was: " + question);
+//        Counter counter = new Counter();
+//        Map answer = counter.returnMap(question);
+//        totalWords.setText(answer);
+//    }
 }

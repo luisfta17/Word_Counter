@@ -26,4 +26,9 @@ public class CounterTest {
     public void canReturnSentence(){
         assertEquals("Your sentence has: 3 words", counter.returnCount("Hola como estas?"));
     }
+
+    @Test
+    public void canReturnHash(){
+        assertEquals("{como=1, hola=3, estas=1}", counter.returnMap("hola hola como estas hola"));
+    }
 }
